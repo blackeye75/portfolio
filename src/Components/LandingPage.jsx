@@ -1,10 +1,11 @@
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
+import ArrowDown from "./ArrowDown";
 
 const LandingPage = () => {
   return (
-    <div className='flex justify-start items-center flex-col  w-full h-screen bg-[url("./bg2.jpg")] bg-cover'>
+    <div className='flex justify-start items-center flex-col  w-full h-[calc(100vh-64px)] bg-[url("./bg2.jpg")] bg-cover'>
       <div className="flex  items-center flex-col pt-14">
         <h1 className='text-9xl font-["Oswald"] tracking-tighter uppercase'>
           Software Developer
@@ -30,19 +31,20 @@ const LandingPage = () => {
           tailored digital solutions that meet their unique needs.
         </p>
       </div>
-      <div className="gap-8 flex mt-4 justify-start w-[65%]">
+      <div className="gap-8 flex mt-8 pl-4 justify-start w-[65%]">
         <div className="flex items-center bg-transparent backdrop-blur-2xl border-[1px] rounded-full px-1 hover:bg-black hover:text-white overflow-hidden">
           <button className=" px-3 py-2 bg-transparent backdrop-blur-2xl outline-none">
             Read More
           </button>
           <MdOutlineArrowOutward size={25} />
         </div>
-        <div  className="flex items-center bg-transparent backdrop-blur-2xl border-[1px] rounded-full px-1" >
-          <button className=" px-3 py-2  ">
-            Contact
-          </button>
+        <div className="flex items-center bg-transparent backdrop-blur-2xl border-[1px] rounded-full px-1">
+          <button className=" px-3 py-2  ">Contact</button>
           <IoMdContact size={25} />
         </div>
+      </div>
+      <div className="arrowAnim">
+        <ArrowDown />
       </div>
     </div>
   );
