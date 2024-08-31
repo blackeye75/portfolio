@@ -30,25 +30,25 @@ export const Header = () => {
   return (
 
     
-    <nav className=" flex py-4 scroll-smooth bg-transparent backdrop-blur-sm sticky top-0 z-10 px-5 justify-between  items-center">
+    <nav className=" flex py-2 scroll-smooth bg-transparent backdrop-blur-sm sticky top-0 z-10 px-5 justify-between  items-center h-16">
       <div className="logo flex gap-3 items-center">
         <div className="img  ">
           <img
             src="./logo.png"
-            className=" p-[2px] h-14 w-14 hover:rotate-[280deg] duration-1000 border-[5px] border-blue-600 rounded-full"
+            className=" p-[2px] h-14 w-14 hover:rotate-[280deg] duration-1000 border-[3px] border-blue-600 rounded-full"
             alt=""
           />
         </div>
         <div className="dets">
-          <h1 className="leading-none font-bold text-xl">Priyanshu Raj</h1>
-          <h1 className="font-thin text-sm">Fullstack Web Developer</h1>
+          <h1 className="leading-none font-semibold text-2xl uppercase font-['Roboto']">Priyanshu Raj</h1>
+          <h1 className="font-extralight font-['Varela_Round'] tracking-tight text-sm">Fullstack Web Developer</h1>
         </div>
       </div>
       <div className="menu">
-        <div className="bg-[#212427] rounded-full p-2 px-4">
+        <div className="bg-[#212427] rounded-full p-1 px-4">
           <ul className="flex items-center justify-between gap-3 font-semibold w-fit">
             {NavbarMenu.map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className="font-[Schibsted_Grotesk]" >
                 <a
                   href={item.link}
                   className="inline-block text-sm py-2 px-3 uppercase"
