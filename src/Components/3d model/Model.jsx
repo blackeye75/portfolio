@@ -13,7 +13,7 @@ function Model() {
     <>
       <Canvas flat camera={{ fov: 35 }}>
         <OrbitControls
-          // enableZoom={false} // Keep zoom enabled
+          enableZoom={false} // Keep zoom enabled
           // minDistance={2} // Set the minimum zoom distance
           // maxDistance={} // Set the maximum zoom distance
         />
@@ -21,7 +21,7 @@ function Model() {
         <Scene />
         <EffectComposer>
           <Bloom
-            intensity={40.0} // The bloom intensity.
+            intensity={90.0} // The bloom intensity.
             luminanceThreshold={0.1} // luminance threshold. Raise this value to mask out darker elements in the scene.
             luminanceSmoothing={1} // smoothness of the luminance threshold. Range is [0, 1]
             mipmapBlur
