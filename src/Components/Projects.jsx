@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="w-full min-h-full h-fit  bg-black flex flex-col items-center justify-center">
+    <div className="w-full min-h-full h-fit  bg-gradient-to-l from-zinc-800 pb-6 to-zinc-950 flex flex-col items-center justify-center">
       <div className="w-full min-h-full h-fit flex items-center flex-col space-y-10">
         <div className="flex ">
           <h1 className="my-5    text-5xl uppercase font-semibold font-[Oswald]">
