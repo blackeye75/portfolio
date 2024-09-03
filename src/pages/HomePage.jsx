@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div>
       <LandingPage />
-      <ThreeElem />
+      {/* <ThreeElem /> */}
       <Marque/>
     </div>
   );
