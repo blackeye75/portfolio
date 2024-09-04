@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="w-full h-fit">
       <LandingPage />
-      {/* <ThreeElem /> */}
+      <ThreeElem />
       <Marque />
       <Projects />
       <Poster />

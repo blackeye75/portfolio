@@ -3,6 +3,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbBrandGithubFilled } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   const NavbarMenu = [
@@ -28,10 +29,13 @@ export const Header = () => {
     },
   ];
   return (
-
-    
     <nav className=" flex py-2 scroll-smooth bg-transparent backdrop-blur-sm sticky top-0 z-10 px-5 justify-between  items-center h-16">
-      <div className="logo flex gap-3 items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="logo flex gap-3 items-center"
+      >
         <div className="img  ">
           <img
             src="./logo.png"
@@ -40,15 +44,24 @@ export const Header = () => {
           />
         </div>
         <div className="dets">
-          <h1 className="leading-none font-semibold text-2xl uppercase font-['Roboto']">Priyanshu Raj</h1>
-          <h1 className="font-extralight font-['Varela_Round'] tracking-tight text-sm">Fullstack Web Developer</h1>
+          <h1 className="leading-none font-semibold text-2xl uppercase font-['Roboto']">
+            Priyanshu Raj
+          </h1>
+          <h1 className="font-extralight font-['Varela_Round'] tracking-tight text-sm">
+            Fullstack Web Developer
+          </h1>
         </div>
-      </div>
-      <div className="menu">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="menu"
+      >
         <div className="bg-[#212427] rounded-full p-1 px-4">
           <ul className="flex items-center justify-between gap-3 font-semibold w-fit">
             {NavbarMenu.map((item) => (
-              <li key={item.id} className="font-[Schibsted_Grotesk]" >
+              <li key={item.id} className="font-[Schibsted_Grotesk]">
                 <a
                   href={item.link}
                   className="inline-block text-sm py-2 px-3 uppercase"
@@ -61,8 +74,13 @@ export const Header = () => {
             {/* <button className="text-xl ps-14"><SlEarphones /></button> */}
           </ul>
         </div>
-      </div>
-      <div className="link gap-4 flex items-center ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="link gap-4 flex items-center "
+      >
         <div className="svg ">
           <svg
             fill="#fff"
@@ -95,7 +113,7 @@ export const Header = () => {
             <TbBrandGithubFilled size={25} />
           </div>
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 };

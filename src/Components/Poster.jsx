@@ -38,11 +38,14 @@ export const Poster = () => {
         {/* <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
           Beta Now Live!
         </span> */}
-        <h1 className="max-w-3xl bg-gradient-to-br  font-['Oswald'] from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-7xl sm:leading-tight md:text-8xl uppercase md:leading-tight">
+        <h1
+          id="textglow"
+          className="max-w-3xl bg-gradient-to-br  font-['Oswald'] from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-7xl sm:leading-tight md:text-8xl uppercase md:leading-tight"
+        >
           Have An Idea??
         </h1>
-        <p className="my-6 max-w-xl text-2xl capitalize text-center font-['Roboto'] leading-relaxed md:text-xl md:leading-relaxed">
-          Feel Free to reach and disscuss your bussiness ideas!!
+        <p className="my-6 max-w-xl text-2xl text-blue-500 capitalize text-center font-['Roboto'] leading-relaxed md:text-xl md:leading-relaxed">
+          Feel Free to reach and disscuss your bussiness Model!!
         </p>
         <motion.button
           style={{
