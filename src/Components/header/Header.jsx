@@ -10,22 +10,22 @@ export const Header = () => {
     {
       id: 1,
       title: "Home",
-      link: "#",
+      link: "/",
     },
     {
       id: 2,
       title: "Work",
-      link: "#",
+      link: "/work",
     },
     {
       id: 3,
       title: "About",
-      link: "#",
+      link: "/about",
     },
     {
       id: 4,
       title: "Contact",
-      link: "#",
+      link: "/contact",
     },
   ];
   return (
@@ -62,12 +62,12 @@ export const Header = () => {
           <ul className="flex items-center justify-between gap-3 font-semibold w-fit">
             {NavbarMenu.map((item) => (
               <li key={item.id} className="font-[Schibsted_Grotesk]">
-                <a
-                  href={item.link}
+                <Link
+                  to={item.link}
                   className="inline-block text-sm py-2 px-3 uppercase"
                 >
                   {item.title}
-                </a>
+                </Link>
               </li>
             ))}
 

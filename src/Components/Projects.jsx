@@ -49,7 +49,7 @@ const Projects = () => {
               React Js, Appwrite
             </motion.p>
           </div>
-          <div className="img p-7 w-[50%] h-full bg-blue-500 ">
+          <div className="img p-7 w-[50%] flex items-center h-full bg-blue-500 ">
             <img src="./fnj.png" className="rounded-md bg-cover bg-center"  alt="" />
           </div>
         </motion.div>
@@ -61,7 +61,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-[65%] h-[30vh] flex  border-[.5px] bg-[#121212] border-zinc-700 rounded-xl overflow-hidden"
         >
-          <div className="text w-[50%] h-full pt-8 p-3  text-white">
+          <div className="text w-[50%] h-full pt-5 p-3  text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -86,8 +86,9 @@ const Projects = () => {
             >
               React Js, Appwrite
             </motion.p>
+            <button className="px-5  py-1 bg-blue-950 rounded-lg mt-2" >Visit</button>
           </div>
-          <div className="img w-[50%] h-full bg-pink-500 p-7 ">
+          <div className="img w-[50%] flex items-center h-full bg-pink-500 p-7 ">
             <img src="./dblog.png" className="rounded-md" alt="" />
           </div>
         </motion.div>
