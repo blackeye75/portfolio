@@ -6,20 +6,32 @@ const AboutPage = () => {
     <div className="w-full min-h-screen h-fit ">
       <div className="container px-[14vw] pt-10 flex gap-10 items-center">
         <motion.img
-          initial={{scale:0}}
-          whileInView={{scale:1}}
-          transition={{duration:1}}
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1 }}
           src="./logo.png"
           className=" rounded-full w-[8rem] h-[8rem] border-[10px] border-blue-500"
           alt=""
         />
-        <h1 className="text-6xl leading-[3.5vw] uppercase font-['Roboto_condensed']">
+        <motion.h1
+          initial={{ x: 100 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          className="text-6xl leading-[3.5vw] uppercase font-['Roboto_condensed']"
+        >
           From Passion to a <br /> Developer
-        </h1>
+        </motion.h1>
       </div>
       <div>
-        <p className="px-[14vw] pt-8 font-['Montserrat'] leading-[18px] tracking-tight">
-          Name's Priyanshu Raj, a passionate FullStack Web developer who is
+        <motion.p
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="px-[14vw] pt-8 font-['Montserrat'] leading-[18px] tracking-tight"
+        >
+          Name's <span className="text-blue-500">Priyanshu Raj</span>, a
+          passionate{" "}
+          <span className="text-pink-500">FullStack Web developer</span> who is
           (currently) based in banglore. I am 23 years old, but have at least
           1.7 year of experience in building projects and developing. I hold a
           passion for developing things and believe that great things are often
@@ -34,22 +46,93 @@ const AboutPage = () => {
           Reason why I spend time in learning more skills is because of the fact
           that it makes me a more valuable person(developer). I am a big
           believer in focus on a specific area and getting really good at it.
-        </p>
-        <h1 className="text-3xl px-[14vw] mb-3 mt-8">How I got started</h1>
-        <p className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]">
-          I've been involved in trying to get into development since my 1st year
-          of college and when you decide to learn something it is obvious you
-          face difficulties. I would like to thank Hitesh Choudhary. His
-          javascript (Chai aur javascript) and react (Chai aur react) helped me
-          learning most of the things i work with now .
-        </p>
-        <h1 className="text-3xl px-[14vw] mb-3 mt-8">Work Policy</h1>
-        <p className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]">
+        </motion.p>
+        <motion.h1
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-2 mt-8 text-amber-800 font-['Montserrat']"
+        >
+          My Philosophy
+        </motion.h1>
+        <motion.p
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+        >
+          I believe that the most powerful things are often invisible. With the
+          right approach and execution, your storyor that of your business—can
+          resonate with a broader audience. My goal is to help you establish or
+          strengthen your online presence, transforming your brand into
+          something truly remarkable
+        </motion.p>
+        <motion.h1
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-amber-800"
+        >
+          Work Policy
+        </motion.h1>
+        <motion.p
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+        >
           I spend most of my time in front of laptop developing and learning.
           Working remotely is that I love, because it saves (a lot of) commuting
           time. However, this does not mean I am unwilling to work in other
           locations.
-        </p>
+        </motion.p>
+        <motion.h1
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-amber-800"
+        >
+          Work Philosophy
+        </motion.h1>
+        <motion.p
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+        >
+          I spend most of my time in front of my laptop, either developing or
+          expanding my skill set. I'm a big believer in focusing on a specific
+          area and mastering it. I love working remotely as it saves valuable
+          commuting time, but I'm always open to opportunities that require
+          working in different locations.
+        </motion.p>
+        <motion.h1
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-amber-800"
+        >
+          Entrepreneurial Spirit
+        </motion.h1>
+        <motion.p
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+        >
+          Possessing an entrepreneurial mindset, I'm highly adaptable and driven
+          to achieve specific objectives. I'm not just focused on creating
+          top-notch web solutions; I'm also aware of the competitive landscape.
+          I dedicate myself to understanding exactly what you need, ensuring
+          that the results exceed expectations.
+        </motion.p>
+      </div>
+      <div className="tchstack">
+        <h1>Techstack</h1>
+        <div>
+          <h1>Frontend</h1>
+          <div></div>
+        </div>
       </div>
     </div>
   );
