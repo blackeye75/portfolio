@@ -7,12 +7,11 @@ import { Poster } from "../Components/Poster";
 
 const HomePage = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-fit">
       <LandingPage />
       {/* <ThreeElem /> */}
       <Marque />
       <Projects />
-
       <Poster />
     </div>
   );

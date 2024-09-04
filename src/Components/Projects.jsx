@@ -9,7 +9,7 @@ const Projects = () => {
             Projects
           </h1>
         </div>
-        <div className=" hover:scale-105 duration-300 w-[65%] h-[30vh] flex  border-[.5px] bg-[#121212] rounded-xl overflow-hidden border-white ">
+        <div className=" hover:scale-105 duration-300 w-[65%] h-[30vh] flex  border-[.5px] bg-[#121212] rounded-xl overflow-hidden border-zinc-700 ">
           <div className=" text w-[50%] h-full pt-8 p-3  text-white ">
             <h1 className="text-5xl tracking-tight font-['Oswald'] leading-[5vw]">
               Function Junction
