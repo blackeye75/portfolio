@@ -11,21 +11,25 @@ export const Header = () => {
       id: 1,
       title: "Home",
       link: "/",
+      active: false,
     },
     {
       id: 2,
       title: "Work",
       link: "/work",
+      active: false,
     },
     {
       id: 3,
       title: "About",
       link: "/about",
+      active: false,
     },
     {
       id: 4,
       title: "Contact",
       link: "/contact",
+      active: false,
     },
   ];
   return (
@@ -44,7 +48,7 @@ export const Header = () => {
           />
         </div>
         <div className="dets">
-          <h1 className="leading-none font-semibold text-2xl uppercase font-['Roboto']">
+          <h1 className="leading-none font-semibold text-2xl uppercase font-['Space_Grotesk']">
             Priyanshu Raj
           </h1>
           <h1 className="font-extralight font-['Varela_Round'] tracking-tight text-sm">

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SkillCard from "../Components/SkillCard";
 
 const AboutPage = () => {
   return (
@@ -127,11 +128,17 @@ const AboutPage = () => {
           that the results exceed expectations.
         </motion.p>
       </div>
-      <div className="tchstack">
-        <h1>Techstack</h1>
+      <div className="tchstack ">
+        <h1 className="text-4xl">Techstack</h1>
         <div>
           <h1>Frontend</h1>
-          <div></div>
+          <div>
+            <SkillCard
+              icon={<i className="devicon-javascript-plain colored"></i>}
+              title="JavaScript"
+              subtitle="development"
+            />
+          </div>
         </div>
       </div>
     </div>
