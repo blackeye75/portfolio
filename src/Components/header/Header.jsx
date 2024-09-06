@@ -11,7 +11,7 @@ export const Header = () => {
       id: 1,
       title: "Home",
       link: "/",
-      active: false,
+      active: true,
     },
     {
       id: 2,
@@ -62,13 +62,16 @@ export const Header = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="menu"
       >
-        <div className="bg-[#212427] rounded-full p-1 px-4">
-          <ul className="flex items-center justify-between gap-3 font-semibold w-fit">
+        <div className="bg-[#212427] rounded-full p-1 px-1">
+          <ul className="flex items-center justify-between gap-2 font-semibold w-fit">
             {NavbarMenu.map((item) => (
               <li key={item.id} className="font-[Schibsted_Grotesk]">
                 <Link
                   to={item.link}
-                  className="inline-block text-sm py-2 px-3 uppercase"
+                  className={`inline-block text-sm py-2 ${
+                    item.active ? "bg-zinc-900" : "bg-transparent"
+                  } rounded-full px-4 uppercase`}
+                  onClick={(prev) => (item.active = !prev)}
                 >
                   {item.title}
                 </Link>

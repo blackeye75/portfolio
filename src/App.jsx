@@ -1,7 +1,6 @@
 import "./App.css";
 import Footer from "./Components/footer/Footer";
 import { Header } from "./Components/header/Header";
-import HomePage from "./pages/HomePage";
 import { Outlet } from "react-router-dom";
 
 function App() {
