@@ -52,7 +52,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-2 mt-8 text-amber-800 font-['Montserrat']"
+          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-2 mt-8 text-gray-400 font-['Montserrat']"
         >
           My Philosophy
         </motion.h1>
@@ -72,7 +72,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-amber-800"
+          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-gray-400"
         >
           Work Policy
         </motion.h1>
@@ -91,7 +91,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-amber-800"
+          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-gray-400"
         >
           Work Philosophy
         </motion.h1>
@@ -111,7 +111,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl font-semibold uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-amber-800"
+          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-gray-400"
         >
           Entrepreneurial Spirit
         </motion.h1>
@@ -128,16 +128,207 @@ const AboutPage = () => {
           that the results exceed expectations.
         </motion.p>
       </div>
-      <div className="tchstack ">
-        <h1 className="text-4xl">Techstack</h1>
+      <div className="tchstack px-[6vw] mt-10">
+        <h1 className="text-6xl font-['oswald']">Techstack</h1>
+        <div className="lang ">
+          <h1 className="text-hollow2 text-3xl font-semibold my-6">
+            Programing Languages
+          </h1>
+          <div className="lang flex flex-wrap gap-9">
+            <div className="card1">
+              <SkillCard
+                icon={<img src="js.png" className="w-16 h-16" />}
+                title="JavaScript"
+                subtitle="Dyanamic"
+              />
+            </div>
+            <div className="card2">
+              <SkillCard
+                icon={<img src="c.png" className="w-10 h-10 mx-3" />}
+                title="C"
+                subtitle="Dyanmic"
+              />
+            </div>
+            <div className="card3">
+              <SkillCard
+                icon={<img src="typescript.png" className="w-10 h-10 mx-3" />}
+                title="TypeScript"
+                subtitle="Static"
+              />
+            </div>
+            <div className="card4">
+              <SkillCard
+                icon={<img src="java.png" className="w-10 h-10 mx-3" />}
+                title="Java"
+                subtitle="Static"
+              />
+            </div>
+            <div className="card5">
+              <SkillCard
+                icon={<img src="python.png" className="w-10 h-10 mx-3" />}
+                title="Python"
+                subtitle="Dyanamic"
+              />
+            </div>
+          </div>
+        </div>
         <div>
-          <h1>Frontend</h1>
-          <div>
-            <SkillCard
-              icon={<i className="devicon-javascript-plain colored"></i>}
-              title="JavaScript"
-              subtitle="development"
-            />
+          <h1 className="text-hollow2 text-3xl font-semibold my-6">Frontend</h1>
+
+          <div className="front flex flex-wrap gap-9">
+            <div className="card2">
+              <SkillCard
+                icon={<img src="reactjs.png" className="w-16 h-16" />}
+                title="React Js"
+                subtitle="Library"
+              />
+            </div>
+            <div className="card3">
+              <SkillCard
+                icon={<img src="redux.png" className="w-16 h-16" />}
+                title="Redux"
+                subtitle="Library"
+              />
+            </div>
+            <div className="card4">
+              <SkillCard
+                icon={<img src="react-router.png" className="w-16 h-16" />}
+                title="ReactRouter"
+                subtitle="Library"
+              />
+            </div>
+            <div className="card5">
+              <SkillCard
+                icon={<img src="tailwind.png" className="w-16 h-16" />}
+                title="Tailwid Css"
+                subtitle="Library"
+              />
+            </div>
+            <div className="card6">
+              <SkillCard
+                icon={<img src="html5.png" className="w-16 h-16" />}
+                title="HTML"
+                subtitle="MarkUp"
+              />
+            </div>
+            <div className="card7">
+              <SkillCard
+                icon={<img src="css.png" className="w-16 h-16" />}
+                title="CSS"
+                subtitle="StyleSheet"
+              />
+            </div>
+            <div className="card8">
+              <SkillCard
+                icon={<img src="three.png" className="w-16 h-16" />}
+                title="Three Js"
+                subtitle="3d Model"
+              />
+            </div>
+            <div className="card9">
+              <SkillCard
+                icon={
+                  <img src="gsap.jpg" className="w-12 mx-2 h-12 rounded-md" />
+                }
+                title="GSAP"
+                subtitle="3d Model"
+              />
+            </div>
+            <div className="card10">
+              <SkillCard
+                icon={
+                  <img src="motion.png" className="w-12 mx-2 h-10 rounded-md" />
+                }
+                title="Framer"
+                subtitle="Animation"
+              />
+            </div>
+
+            <div className="card11">
+              <SkillCard
+                icon={
+                  <img
+                    src="reactfibero.webp"
+                    className="w-12 mx-2 h-10 rounded-md"
+                  />
+                }
+                title="React3Fiber"
+                subtitle="3d Model"
+              />
+            </div>
+            <div className="card12">
+              <SkillCard
+                icon={
+                  <img
+                    src="next.png"
+                    className="w-10 mx-2 bg-white h-10 rounded-md"
+                  />
+                }
+                title="Next Js"
+                subtitle="Framework"
+              />
+            </div>
+            <div className="card13">
+              <SkillCard
+                icon={
+                  <img
+                    src="mui.png"
+                    className="w-10 mx-2 bg-white h-10 rounded-md"
+                  />
+                }
+                title="Material UI"
+                subtitle="SAAS"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="back ">
+          <h1 className="text-hollow2 text-3xl font-semibold my-6">
+            Backend
+          </h1>
+          <div className="lang flex flex-wrap gap-9">
+            <div className="card1">
+              <SkillCard
+                icon={<img src="nodejs.png" className="w-16 h-16" />}
+                title="Node"
+                subtitle="RunTime"
+              />
+            </div>
+            <div className="card2">
+              <SkillCard
+                icon={<img src="express.png" className="w-10 h-10 mx-3" />}
+                title="Express Js"
+                subtitle="APIs"
+              />
+            </div>
+            <div className="card3">
+              <SkillCard
+                icon={<img src="spring.png" className="w-10 h-10 mx-3" />}
+                title="SpringBoot"
+                subtitle="APIs"
+              />
+            </div>
+            <div className="card4">
+              <SkillCard
+                icon={<img src="cloudinary.png" className="w-14 h-14 mx-1" />}
+                title="Cloudinary"
+                subtitle="FileHandeling"
+              />
+            </div>
+            <div className="card5">
+              <SkillCard
+                icon={<img src="postman.png" className="w-14 h-14 mx-1" />}
+                title="Postman"
+                subtitle="ApiTesting"
+              />
+            </div>
+            <div className="card6">
+              <SkillCard
+                icon={<img src="Appwrite.png" className="w-14 h-14 mx-2" />}
+                title="Appwrite"
+                subtitle="BaaS"
+              />
+            </div>
           </div>
         </div>
       </div>

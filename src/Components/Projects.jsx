@@ -45,7 +45,7 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-l font-['Roboto'] tracking-tight uppercase "
+              className="text-xs font-['Roboto_Condensed'] font-light tracking-tight uppercase "
             >
               React Js, Appwrite
             </motion.p>
@@ -93,12 +93,12 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="text-l font-['Roboto'] tracking-tight uppercase "
+              className="text-xs font-['Roboto_Condensed'] font-light tracking-tight uppercase "
             >
               React Js, Appwrite
             </motion.p>
-            <div className="flex gap-2 items-center bg-pink-500 rounded-md w-[21%]  h-[35px] mt-1 hover:bg-pink-700 duration-300">
-              <button className=" font-[500] text-lg px-3  text-black font-['Roboto_Condensed'] mt-2">
+            <div className="flex gap-2 items-center bg-pink-500 rounded-md w-[21%]  h-[32px] mt-1 hover:bg-pink-700 duration-300 justify-center">
+              <button className=" font-[500] text-lg px-3   text-black font-['Roboto_Condensed'] mt-2">
                 Visit
               </button>
               <MdOutlineArrowOutward size={28} className="" />
@@ -137,7 +137,7 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="text-s font-['Roboto'] tracking-tight uppercase "
+              className="text-xs font-['Roboto_Condensed'] font-light tracking-tight uppercase "
             >
               MERN Stack,Cloudinary
             </motion.p>
