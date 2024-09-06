@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SkillCard from "../Components/SkillCard";
+import {Poster} from "../Components/Poster"
 
 const AboutPage = () => {
   return (
-    <div className="w-full min-h-screen h-fit ">
+    <div className="w-full min-h-screen h-fit bg-[url('./workbg.jpg')] bg-no-repeat bg-fixed bg-cover">
       <div className="container px-[14vw] pt-10 flex gap-10 items-center">
         <motion.img
           initial={{ scale: 0 }}
@@ -283,9 +284,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="back ">
-          <h1 className="text-hollow2 text-3xl font-semibold my-6">
-            Backend
-          </h1>
+          <h1 className="text-hollow2 text-3xl font-semibold my-6">Backend</h1>
           <div className="lang flex flex-wrap gap-9">
             <div className="card1">
               <SkillCard
@@ -330,6 +329,47 @@ const AboutPage = () => {
               />
             </div>
           </div>
+        </div>
+        <div className="back ">
+          <h1 className="text-hollow2 text-3xl font-semibold my-6">Database</h1>
+          <div className="lang flex flex-wrap gap-9">
+            <div className="card1">
+              <SkillCard
+                icon={<img src="mongodb.png" className="w-16 h-16" />}
+                title="MongoDB"
+                subtitle="noSqlDb"
+              />
+            </div>
+            <div className="card2">
+              <SkillCard
+                icon={<img src="mysql.png" className="w-14 h-14 mx-1" />}
+                title="MySql"
+                subtitle="SqlDb"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="tool">
+          <h1 className="text-hollow2 text-3xl font-semibold my-6">Tools</h1>
+          <div className="lang flex flex-wrap gap-9">
+            <div className="card1">
+              <SkillCard
+                icon={<img src="vs.png" className="w-16 h-16" />}
+                title="VS Code"
+                subtitle="Editor"
+              />
+            </div>
+            <div className="card2">
+              <SkillCard
+                icon={<img src="git.png" className="w-12 h-12 mx-1" />}
+                title="GitHub"
+                subtitle="DeveloperPlatform"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 pb-4 rounded-lg overflow-hidden" >
+          <Poster/>
         </div>
       </div>
     </div>
