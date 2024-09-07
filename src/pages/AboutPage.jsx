@@ -1,7 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import SkillCard from "../Components/SkillCard";
-import {Poster} from "../Components/Poster"
+import { Poster } from "../Components/Poster";
 
 const AboutPage = () => {
   return (
@@ -130,11 +130,23 @@ const AboutPage = () => {
         </motion.p>
       </div>
       <div className="tchstack px-[6vw] mt-10">
-        <h1 className="text-6xl font-['oswald']">Techstack</h1>
+        <motion.h1
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 3, delay: 0.2, ease: easeInOut }}
+          className="text-6xl font-['oswald']"
+        >
+          Techstack
+        </motion.h1>
         <div className="lang ">
-          <h1 className="text-hollow2 text-3xl font-semibold my-6">
+          <motion.h1
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: easeInOut }}
+            className="text-hollow2 text-3xl font-semibold my-6"
+          >
             Programing Languages
-          </h1>
+          </motion.h1>
           <div className="lang flex flex-wrap gap-9">
             <div className="card1">
               <SkillCard
@@ -368,8 +380,8 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 pb-4 rounded-lg overflow-hidden" >
-          <Poster/>
+        <div className="mt-10 pb-4 rounded-lg overflow-hidden">
+          <Poster />
         </div>
       </div>
     </div>
