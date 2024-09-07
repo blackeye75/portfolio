@@ -1,37 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { GrLinkedinOption } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { motion } from "framer-motion";
 
+const NavbarMenu = [
+  {
+    id: 1,
+    title: "Home",
+    link: "/",
+    active: false,
+  },
+  {
+    id: 2,
+    title: "Work",
+    link: "/work",
+    active: false,
+  },
+  {
+    id: 3,
+    title: "About",
+    link: "/about",
+    active: false,
+  },
+  {
+    id: 4,
+    title: "Contact",
+    link: "/contact",
+    active: false,
+  },
+];
 export const Header = () => {
-  const NavbarMenu = [
-    {
-      id: 1,
-      title: "Home",
-      link: "/",
-      active: true,
-    },
-    {
-      id: 2,
-      title: "Work",
-      link: "/work",
-      active: false,
-    },
-    {
-      id: 3,
-      title: "About",
-      link: "/about",
-      active: false,
-    },
-    {
-      id: 4,
-      title: "Contact",
-      link: "/contact",
-      active: false,
-    },
-  ];
+  const defaultActiveLink =
+    NavbarMenu.find((item) => item.title === "Home")?.id || NavbarMenu[0]?.id;
+  const [activeLink, setActiveLink] = useState(defaultActiveLink);
+
+  const handleLinkClick = (id) => {
+    setActiveLink(id);
+  };
+
   return (
     <nav className=" flex py-2 scroll-smooth bg-transparent backdrop-blur-sm sticky top-0 z-10 px-5 justify-between  items-center h-16">
       <motion.div
@@ -69,15 +77,14 @@ export const Header = () => {
                 <Link
                   to={item.link}
                   className={`inline-block text-sm py-2 ${
-                    item.active ? "bg-zinc-900" : "bg-transparent"
-                  } rounded-full px-4 uppercase`}
-                  onClick={(prev) => (item.active = !prev)}
+                    activeLink === item.id ? "bg-black/40" : "bg-transparent"
+                  } rounded-full px-4 uppercase duration-1000`}
+                  onClick={() => handleLinkClick(item.id)} // Set active link on click
                 >
                   {item.title}
                 </Link>
               </li>
             ))}
-
             {/* <button className="text-xl ps-14"><SlEarphones /></button> */}
           </ul>
         </div>
