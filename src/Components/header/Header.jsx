@@ -116,16 +116,25 @@ export const Header = () => {
         </div>
         <div className="visit flex gap-3 ">
           {/* <Link to=""> */}
-          <div className="hover:bg-blue-500 p-2 rounded-full duration-300">
+          <Link
+            to="http://www.linkedin.com/in/priyanshu-raj-096566206"
+            className="hover:bg-blue-500 p-2 rounded-full duration-300"
+          >
             <GrLinkedinOption size={25} className=" " />
-          </div>
+          </Link>
           {/* </Link> */}
-          <div className="hover:bg-purple-900 p-2 rounded-full duration-300">
+          <Link
+            to="https://www.instagram.com/black.eye.__/"
+            className="hover:bg-purple-900 p-2 rounded-full duration-300"
+          >
             <BiLogoInstagramAlt size={25} />
-          </div>
-          <div className="hover:bg-black p-2 rounded-full duration-300">
+          </Link>
+          <Link
+            to="https://github.com/blackeye75/"
+            className="hover:bg-black p-2 rounded-full duration-300"
+          >
             <TbBrandGithubFilled size={25} />
-          </div>
+          </Link>
         </div>
       </motion.div>
     </nav>
