@@ -6,20 +6,20 @@ import { Poster } from "../Components/Poster";
 const AboutPage = () => {
   return (
     <div className="w-full min-h-screen h-fit bg-[url('./workbg.jpg')] bg-no-repeat bg-fixed bg-cover">
-      <div className="container px-[14vw] pt-10 flex gap-10 items-center">
+      <div className="containers md:px-[14vw] px-[10vw]  pt-10 flex gap-10 items-center">
         <motion.img
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1 }}
           src="./logo.png"
-          className=" rounded-full w-[8rem] h-[8rem] border-[10px] border-blue-500"
+          className=" rounded-full absolute sm:static sm:block w-[2.2rem] h-[2.2rem] sm:w-[8rem] sm:h-[8rem] sm:border-[10px] boder-[4px]  border-blue-500 top-[15.1vh] left-[55vw]"
           alt=""
         />
         <motion.h1
-          initial={{ x: 100 }}
-          whileInView={{ x: 0 }}
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-6xl leading-[3.5vw] uppercase font-['Roboto_condensed']"
+          className="sm:text-6xl text-4xl sm:leading-[3.5vw] leading-[3.8vh] uppercase font-['Roboto_condensed']"
         >
           From Passion to a <br /> Developer
         </motion.h1>
@@ -29,7 +29,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="px-[14vw] pt-8 font-['Montserrat'] leading-[18px] tracking-tight"
+          className="md:px-[14vw] px-[10vw] pt-8 font-['Montserrat'] leading-[18px] tracking-tight"
         >
           Name's <span className="text-blue-500">Priyanshu Raj</span>, a
           passionate{" "}
@@ -53,7 +53,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-2 mt-8 text-gray-400 font-['Montserrat']"
+          className="text-3xl font-[300] uppercase tracking-tighter md:px-[14vw] px-[10vw] mb-2 mt-8 text-gray-400 font-['Montserrat']"
         >
           My Philosophy
         </motion.h1>
@@ -61,7 +61,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+          className="text-xl font-['Montserrat'] md:px-[14vw] px-[10vw] leading-[18px]"
         >
           I believe that the most powerful things are often invisible. With the
           right approach and execution, your storyor that of your business—can
@@ -81,7 +81,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+          className="text-xl font-['Montserrat'] md:px-[14vw] px-[10vw] leading-[18px]"
         >
           I spend most of my time in front of laptop developing and learning.
           Working remotely is that I love, because it saves (a lot of) commuting
@@ -92,7 +92,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-gray-400"
+          className="text-3xl font-[300] uppercase tracking-tighter md:px-[14vw] px-[10vw] mb-3 mt-6 text-gray-400"
         >
           Work Philosophy
         </motion.h1>
@@ -100,7 +100,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+          className="text-xl font-['Montserrat'] md:px-[14vw] px-[10vw] leading-[18px]"
         >
           I spend most of my time in front of my laptop, either developing or
           expanding my skill set. I'm a big believer in focusing on a specific
@@ -112,7 +112,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-gray-400"
+          className="text-3xl font-[300] uppercase tracking-tighter md:px-[14vw] px-[10vw] mb-3 mt-6 text-gray-400"
         >
           Entrepreneurial Spirit
         </motion.h1>
@@ -120,7 +120,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-xl font-['Montserrat'] px-[14vw] leading-[18px]"
+          className="text-xl font-['Montserrat'] md:px-[14vw] px-[10vw] leading-[18px]"
         >
           Possessing an entrepreneurial mindset, I'm highly adaptable and driven
           to achieve specific objectives. I'm not just focused on creating
