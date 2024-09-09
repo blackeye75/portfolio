@@ -12,7 +12,7 @@ import {
 function Model() {
   return (
     <>
-      <Canvas flat camera={{ fov: 35 }}>
+      <Canvas flat camera={{ fov: 55 }}>
         <OrbitControls
           enableZoom={false} // Keep zoom enabled
           // minDistance={2} // Set the minimum zoom distance

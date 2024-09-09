@@ -9,7 +9,7 @@ const ThreeElem = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className='text-7xl font-["Oswald"] uppercase text-center pt-5'
+        className='sm:text-7xl text-5xl font-["Oswald"] uppercase text-center pt-5'
       >
         Shaping Ideas into Reality
       </motion.h1>
@@ -17,9 +17,9 @@ const ThreeElem = () => {
         className="w-full h-full"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
+        transition={{ duration: 1, delay: .2 }}
       >
-        <Model />
+        {/* <Model /> */}
       </motion.div>
     </div>
   );

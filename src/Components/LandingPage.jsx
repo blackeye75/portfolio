@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 const LandingPage = () => {
   return (
     <div className='flex justify-start items-center flex-col  w-full h-[calc(100vh-64px)] bg-[url("./bg2.jpg")] bg-cover'>
-      <div className="flex  items-center flex-col pt-14">
+      <div className="flex  items-center flex-col sm:pt-14 pt-20  ">
         <motion.h1
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className='text-9xl font-["Oswald"] tracking-tighter uppercase'
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          className='md:text-9xl text-5xl font-["Oswald"] tracking-tighter uppercase'
         >
           Software Developer
         </motion.h1>
@@ -34,7 +34,7 @@ const LandingPage = () => {
               initial={{ opacity: 0,y:100 }}
               animate={{ opacity: 1,y:0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className='text-5xl font-["Schibsted_Grotesk"] tracking-tighter uppercase'
+              className='text-4xl font-["Schibsted_Grotesk"] tracking-wide text-center mt-2 leading-none sm:leading-none sm:mt-0 md:tracking-tighter uppercase'
             >
               Full Stack Web Developer
             </motion.h1>
@@ -49,10 +49,10 @@ const LandingPage = () => {
       </div>
       <div className="mt-10 flex justify-center">
         <motion.p
-          initial={{ opacity: 0,scale:1.2 }}
-          whileInView={{ opacity: 1 ,scale:1}}
+          initial={{ opacity: 0}}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="w-[65%] text-center leading-2 font-[500] text-sm tracking-tight"
+          className="sm:w-[65%] w-full sm:px-0 px-6 text-center sm:leading-2 leading-tight font-[500] sm:text-sm text-lg tracking-tight"
         >
           I am a freelancer based in Bengaluru, specializing in delivering
           high-quality full-stack projects using the MERN stack and Java. My
@@ -62,12 +62,12 @@ const LandingPage = () => {
           tailored digital solutions that meet their unique needs.
         </motion.p>
       </div>
-      <div className="gap-8 flex mt-8 pl-4 justify-start w-[65%]">
+      <div className="gap-8 flex mt-8 pl-4 justify-start w-full sm:w-[65%]">
         <motion.div
-          initial={{ opacity: 0,scale:2 }}
-          whileInView={{ opacity: 1 ,scale:1}}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="flex items-center bg-transparent backdrop-blur-2xl border-[1px] rounded-full px-1 hover:bg-black hover:text-white overflow-hidden"
+          className="flex items-center bg-transparent backdrop-blur-2xl border-[1px] rounded-full sm:px-1 px-4 hover:bg-black hover:text-white overflow-hidden"
         >
           <button className=" px-3 py-2 bg-transparent backdrop-blur-2xl outline-none">
             Read More
@@ -75,8 +75,8 @@ const LandingPage = () => {
           <MdOutlineArrowOutward size={25} />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 ,scale:2}}
-          whileInView={{ opacity: 1 ,scale:1}}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           className="flex items-center bg-transparent backdrop-blur-2xl border-[1px] rounded-full px-1"
         >

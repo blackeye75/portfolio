@@ -1,76 +1,167 @@
 import TextInput from "../Components/TextInput";
 import React from "react";
-import {Poster} from "../Components/Poster"
+import { Poster } from "../Components/Poster";
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const ContactPage = () => {
   return (
     <div className="w-full min-h-screen h-fit px-[10vw] bg-[url('./workbg.jpg')]  bg-no-repeat bg-fixed bg-cover pt-14">
-      <h1 className="text-blue-500 text-7xl font-bold font-['Roboto_Condensed']">
+      <motion.h1
+        initial={{ x: -100, opacity: 0, scale: 0 }}
+        whileInView={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 3, delay: 0.2, ease: "easeInOut" }}
+        className="text-blue-500 text-7xl font-bold font-['Roboto_Condensed']"
+      >
         Contact
-      </h1>
-      <p className="text-sm font-['Space_Grotesk'] text-zinc-400 ">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 3, delay: 0.2, ease: "easeInOut" }}
+        className="text-sm font-['Space_Grotesk'] text-zinc-400 "
+      >
         Please fill out the following form and we will get back to you within
         the next 24 hours to help you become even greater at what you do.
-      </p>
+      </motion.p>
       <form className="msg ">
         <div className="name flex ">
           <div className="dets flex-1 flex flex-col  p-4">
-            <h1 className="p-2 w-[7%] rounded-full text-center font-['Space_Grotesk'] bg-zinc-600 ">
+            <motion.h1
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="p-2 w-[7%] rounded-full text-center font-['Space_Grotesk'] bg-zinc-600 "
+            >
               1
-            </h1>
-            <h1 className="text-4xl font-['Space_Grotesk'] mt-2 ">
+            </motion.h1>
+            <motion.h1
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="text-4xl font-['Space_Grotesk'] mt-2 "
+            >
               What Is Your Name ?
-            </h1>
-            <h3 className="text-xs font-[Roboto_Condensed] text-red-500">
+            </motion.h1>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 3, delay: 0.2, ease: "easeInOut" }}
+              className="text-xs font-[Roboto_Condensed] text-red-500"
+            >
               Required
-            </h3>
+            </motion.h3>
           </div>
-          <div className="field  flex-1 flex items-center justify-center ">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="field  flex-1 flex items-center justify-center "
+          >
             {/* field */}
             <TextInput label="Your Sweet Name" />
-          </div>
+          </motion.div>
         </div>
         <div className="email flex">
           <div className="dets flex-1 flex flex-col  p-4">
-            <h1 className="p-2 w-[7%] rounded-full text-center font-['Space_Grotesk'] bg-zinc-600 ">
+            <motion.h1
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="p-2 w-[7%] rounded-full text-center font-['Space_Grotesk'] bg-zinc-600 "
+            >
               2
-            </h1>
-            <h1 className="text-4xl font-['Space_Grotesk'] mt-2 ">
+            </motion.h1>
+            <motion.h1
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="text-4xl font-['Space_Grotesk'] mt-2 "
+            >
               What is your email address?
-            </h1>
-            <h3 className="text-xs font-[Roboto_Condensed] text-red-500">
+            </motion.h1>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 3, delay: 0.2, ease: "easeInOut" }}
+              className="text-xs font-[Roboto_Condensed] text-red-500"
+            >
               Required
-            </h3>
+            </motion.h3>
           </div>
-          <div className="field  flex-1 flex items-center justify-center ">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="field  flex-1 flex items-center justify-center "
+          >
             {/* field */}
             <TextInput label="Email Adderress" />
-          </div>
+          </motion.div>
         </div>
         <div className="query flex">
           <div className="dets flex-1 flex flex-col  p-4">
-            <h1 className="p-2 w-[7%] rounded-full text-center font-['Space_Grotesk'] bg-zinc-600 ">
+            <motion.h1
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="p-2 w-[7%] rounded-full text-center font-['Space_Grotesk'] bg-zinc-600 "
+            >
               3
-            </h1>
-            <h1 className="text-4xl font-['Space_Grotesk'] mt-2 leading-[2vw]">
+            </motion.h1>
+            <motion.h1
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="text-4xl font-['Space_Grotesk'] mt-2 leading-[2vw]"
+            >
               Can you tell me about your project / product / company in a few
               words?
-            </h1>
-            <h3 className="text-xs font-[Roboto_Condensed] text-red-500">
+            </motion.h1>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 3, delay: 0.2, ease: "easeInOut" }}
+              className="text-xs font-[Roboto_Condensed] text-red-500"
+            >
               Required
-            </h3>
+            </motion.h3>
           </div>
-          <div className="field  flex-1 flex items-center justify-center ">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="field  flex-1 flex items-center justify-center "
+          >
             {/* field */}
             <TextInput label="Query" />
-          </div>
+          </motion.div>
         </div>
-        <button className="px-4 py-1 text-xl font-['Roboto_Condensed'] bg-blue-500 rounded-lg ml-4">
+        <motion.button
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 3, delay: 0.2, ease: "easeInOut" }}
+          className="px-4 py-1 text-xl font-['Roboto_Condensed'] bg-blue-500 rounded-lg ml-4"
+        >
           Send
-        </button>
+        </motion.button>
       </form>
-      <div className=" rounded-lg overflow-hidden mt-10" >
-        <Poster/>
+      <div className=" rounded-lg overflow-hidden mt-10">
+        <Poster />
       </div>
     </div>
   );

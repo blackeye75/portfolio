@@ -244,7 +244,7 @@ const AboutPage = () => {
                   <img src="gsap.jpg" className="w-12 mx-2 h-12 rounded-md" />
                 }
                 title="GSAP"
-                subtitle="3d Model"
+                subtitle="Animation"
               />
             </div>
             <div className="card10">
