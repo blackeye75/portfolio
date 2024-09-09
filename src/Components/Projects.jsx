@@ -159,7 +159,6 @@
 
 // export default Projects;
 
-
 import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -167,7 +166,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Projects = () => {
   return (
     <div className="w-full min-h-full h-fit bg-gradient-to-l from-zinc-800 pb-6 to-zinc-950 flex flex-col items-center justify-center">
-      <div className="w-full min-h-full h-fit px-0 sm:px-4 flex items-center flex-col space-y-10">
+      <div className="w-full min-h-full h-fit px-2 sm:px-4 flex items-center flex-col space-y-10">
         <div className="flex">
           <motion.h1
             initial={{ opacity: 0 }}
@@ -186,7 +185,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-full sm:w-[65%] h-[30vh] sm:h-[35vh] flex flex-col sm:flex-row border-[.5px] bg-[#121212] rounded-xl overflow-hidden border-zinc-700"
         >
-          <div className="text w-full sm:w-[50%] h-full pt-5 p-3 text-white">
+          <div className="text w-full sm:w-[50%] sm:space-y-0 space-y-1 h-full pt-5 p-3 text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -219,7 +218,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="img w-full sm:w-[50%] h-[25vh] sm:h-full bg-blue-500 p-3 sm:p-7">
-            <img src="./fnj.png" className="rounded-md object-cover w-full h-full" alt="" />
+            <img
+              src="./fnj.png"
+              className="rounded-md object-cover w-full h-full"
+              alt=""
+            />
           </div>
         </motion.div>
 
@@ -230,7 +233,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-full sm:w-[65%] h-[30vh] sm:h-[35vh] flex flex-col sm:flex-row border-[.5px] bg-[#121212] border-zinc-700 rounded-xl overflow-hidden"
         >
-          <div className="text w-full sm:w-[50%] h-full pt-5 p-3 text-white">
+          <div className="text w-full sm:w-[50%] sm:space-y-0 space-y-1 h-full pt-5 p-3 text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -263,7 +266,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="img w-full sm:w-[50%] h-[25vh] sm:h-full bg-pink-500 p-3 sm:p-7">
-            <img src="./dblog.png" className="rounded-md object-cover w-full h-full" alt="" />
+            <img
+              src="./dblog.png"
+              className="rounded-md object-cover w-full h-full"
+              alt=""
+            />
           </div>
         </motion.div>
 
@@ -274,7 +281,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-full sm:w-[65%] h-[30vh] sm:h-[35vh] flex flex-col sm:flex-row border-[.5px] bg-[#121212] border-zinc-700 rounded-xl overflow-hidden"
         >
-          <div className="text w-full sm:w-[50%] h-full pt-8 p-3 text-white">
+          <div className="text w-full sm:w-[50%] sm:space-y-0 space-y-1 h-full pt-8 p-3 text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -307,7 +314,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="img w-full sm:w-[50%] h-[25vh] sm:h-full bg-red-500 p-3 sm:p-7">
-            <img src="./justrent.png" className="rounded-md object-cover w-full h-full" alt="" />
+            <img
+              src="./justrent.png"
+              className="rounded-md object-cover w-full h-full"
+              alt=""
+            />
           </div>
         </motion.div>
       </div>
