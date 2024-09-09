@@ -66,7 +66,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full h-fit bg-black flex flex-col sm:flex-row items-center justify-center p-4">
+    <div className="w-full h-fit bg-black flex flex-col sm:flex-row items-center justify-center sm:px-20 p-4">
       {/* Left section */}
       <motion.div
         initial={{ opacity: 0 }}
