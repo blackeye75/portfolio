@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import {motion} from "framer-motion"
-import "./style.css";
+import "../3d model/style.css";
 import { OrbitControls } from "@react-three/drei";
 
 import { Scene } from "./Scene";
