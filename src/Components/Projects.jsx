@@ -185,7 +185,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-full sm:w-[65%] h-[30vh] sm:h-[35vh] flex flex-col sm:flex-row border-[.5px] bg-[#121212] rounded-xl overflow-hidden border-zinc-700"
         >
-          <div className="text w-full sm:w-[50%] sm:space-y-0 space-y-1 h-full pt-5 p-3 text-white">
+          <div className="text w-full sm:w-[50%] sm:space-y-1 space-y-1 h-full pt-5 p-3 text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -233,7 +233,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-full sm:w-[65%] h-[30vh] sm:h-[35vh] flex flex-col sm:flex-row border-[.5px] bg-[#121212] border-zinc-700 rounded-xl overflow-hidden"
         >
-          <div className="text w-full sm:w-[50%] sm:space-y-0 space-y-1 h-full pt-5 p-3 text-white">
+          <div className="text w-full sm:w-[50%] sm:space-y-1 space-y-1 h-full pt-5 p-3 text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -281,7 +281,7 @@ const Projects = () => {
           transition={{ duration: 2, delay: 0.8 }}
           className="hover:scale-105 duration-300 w-full sm:w-[65%] h-[30vh] sm:h-[35vh] flex flex-col sm:flex-row border-[.5px] bg-[#121212] border-zinc-700 rounded-xl overflow-hidden"
         >
-          <div className="text w-full sm:w-[50%] sm:space-y-0 space-y-1 h-full pt-8 p-3 text-white">
+          <div className="text w-full sm:w-[50%] sm:space-y-1 space-y-1 h-full pt-8 p-3 text-white">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

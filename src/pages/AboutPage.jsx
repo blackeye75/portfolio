@@ -12,7 +12,7 @@ const AboutPage = () => {
           whileInView={{ scale: 1 }}
           transition={{ duration: 1 }}
           src="./logo.png"
-          className=" rounded-full absolute sm:static sm:block w-[2.2rem] h-[2.2rem] sm:w-[8rem] sm:h-[8rem] sm:border-[10px] boder-[4px]  border-blue-500 top-[15.1vh] left-[55vw]"
+          className=" rounded-full hidden  sm:static sm:block w-[2.2rem] h-[2.2rem] sm:w-[8rem] sm:h-[8rem] sm:border-[10px] boder-[4px]  border-blue-500 top-[15.1vh] left-[55vw]"
           alt=""
         />
         <motion.h1
@@ -73,7 +73,7 @@ const AboutPage = () => {
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-[300] uppercase tracking-tighter px-[14vw] mb-3 mt-6 text-gray-400"
+          className="text-3xl font-[300] uppercase tracking-tighter md:px-[14vw] px-[10vw] mb-3 mt-6 text-gray-400"
         >
           Work Policy
         </motion.h1>
@@ -147,7 +147,7 @@ const AboutPage = () => {
           >
             Programing Languages
           </motion.h1>
-          <div className="lang flex flex-wrap gap-9">
+          <div className="lang flex flex-wrap gap-3 sm:gap-9">
             <div className="card1">
               <SkillCard
                 icon={<img src="js.png" className="w-16 h-16" />}
@@ -188,7 +188,7 @@ const AboutPage = () => {
         <div>
           <h1 className="text-hollow2 text-3xl font-semibold my-6">Frontend</h1>
 
-          <div className="front flex flex-wrap gap-9">
+          <div className="front flex flex-wrap sm:gap-9 gap-3">
             <div className="card2">
               <SkillCard
                 icon={<img src="reactjs.png" className="w-16 h-16" />}
@@ -297,7 +297,7 @@ const AboutPage = () => {
         </div>
         <div className="back ">
           <h1 className="text-hollow2 text-3xl font-semibold my-6">Backend</h1>
-          <div className="lang flex flex-wrap gap-9">
+          <div className="lang flex flex-wrap gap-3 sm:gap-9">
             <div className="card1">
               <SkillCard
                 icon={<img src="nodejs.png" className="w-16 h-16" />}
@@ -344,7 +344,7 @@ const AboutPage = () => {
         </div>
         <div className="back ">
           <h1 className="text-hollow2 text-3xl font-semibold my-6">Database</h1>
-          <div className="lang flex flex-wrap gap-9">
+          <div className="lang flex flex-wrap gap-3 sm:gap-9">
             <div className="card1">
               <SkillCard
                 icon={<img src="mongodb.png" className="w-16 h-16" />}
@@ -363,7 +363,7 @@ const AboutPage = () => {
         </div>
         <div className="tool">
           <h1 className="text-hollow2 text-3xl font-semibold my-6">Tools</h1>
-          <div className="lang flex flex-wrap gap-9">
+          <div className="lang flex flex-wrap gap-3 sm:gap-9">
             <div className="card1">
               <SkillCard
                 icon={<img src="vs.png" className="w-16 h-16" />}
