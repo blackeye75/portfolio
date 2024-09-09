@@ -19,7 +19,7 @@ const ThreeElem = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: .2 }}
       >
-        {/* <Model /> */}
+        <Model />
       </motion.div>
     </div>
   );
