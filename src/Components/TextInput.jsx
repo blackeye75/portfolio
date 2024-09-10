@@ -65,7 +65,7 @@ import TextField from "@mui/material/TextField";
 export default function TextInput({label}) {
   return (
     <Box
-      sx={{ '& > :not(style)': { m: 1, width: '45ch' } }}
+      sx={{ '& > :not(style)': { m: 1, width: '40ch' } }}
       noValidate
       autoComplete="off"
     >
