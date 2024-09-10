@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
-    <div className='flex justify-start items-center flex-col  w-full h-[calc(100vh-64px)] bg-[url("bg2.jpg")] bg-cover bg-no-repeat'>
+    <div className='landing flex justify-start items-center flex-col  w-full h-[calc(100vh-64px)] bg-[url("/bg2.jpg")] bg-cover bg-no-repeat'>
       <div className="flex  items-center flex-col sm:pt-14 pt-20  ">
         <motion.h1
             initial={{ opacity: 0, y: 50 }}

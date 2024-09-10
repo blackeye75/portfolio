@@ -5,7 +5,7 @@ import { Poster } from "../Components/Poster";
 
 const AboutPage = () => {
   return (
-    <div className="w-full min-h-screen h-fit bg-[url('./workbg.jpg')] bg-no-repeat bg-fixed bg-cover">
+    <div className="w-full min-h-screen h-fit bg-[url('/workbg.jpg')] bg-no-repeat bg-fixed bg-cover">
       <div className="containers md:px-[14vw] px-[10vw]  pt-10 flex gap-10 items-center">
         <motion.img
           initial={{ scale: 0 }}
