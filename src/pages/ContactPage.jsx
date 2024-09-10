@@ -193,7 +193,7 @@ const variants = {
 
 const ContactPage = () => {
   return (
-    <div className="w-screen min-h-screen h-fit px-4 sm:px-[10vw] bg-[url('./workbg.jpg')] bg-no-repeat bg-fixed bg-cover pt-14">
+    <div className="w-screen min-h-screen h-fit px-4 sm:px-[10vw] bg-[url('/workbg.jpg')] bg-no-repeat bg-fixed bg-cover pt-14">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

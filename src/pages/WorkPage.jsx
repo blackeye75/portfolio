@@ -5,7 +5,7 @@ import { easeInOut, motion } from "framer-motion";
 
 export const WorkPage = () => {
   return (
-    <div className="w-full min-h-screen h-fit px-[10vw] bg-[url('./workbg.jpg')]  bg-no-repeat bg-fixed bg-cover pt-14">
+    <div className="w-full min-h-screen h-fit px-[10vw] bg-[url('/workbg.jpg')]  bg-no-repeat bg-fixed bg-cover pt-14">
       <div className="dets">
         <motion.h1
           initial={{ x: -100, opacity: 0, scale: 0 }}
