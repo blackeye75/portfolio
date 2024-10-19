@@ -116,7 +116,7 @@ const Footer = () => {
         </Link>
         <Link
           className="font-light capitalize text-white hover:text-slate-300"
-          to="https://drive.google.com/file/d/1t_Zt-7vAi_bMzaCvxrHPMGJiwP4xEfKD/view?usp=drive_link"
+          to="https://drive.google.com/file/d/1lL2M007wqPoScHXpfpEPjBxI-a8Uu_8q/view?usp=drive_link"
         >
           Resume
         </Link>
