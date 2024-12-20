@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ThreeElem = () => {
   return (
-    <div className='w-full h-[100vh] bg-[url("/bg.jpg")] bg-cover'>
+    <div className='w-full h-[100vh] bg-[url("/bg3elem.jpg")] bg-cover'>
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
